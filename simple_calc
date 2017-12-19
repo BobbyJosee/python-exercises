@@ -1,0 +1,15 @@
+#simple calc
+
+
+from sys import argv
+
+if len(argv)==4:
+   if argv[1]=='add':
+      print int (argv[2]) +int (argv[3])
+   elif argv[1]=='sub':
+      print int (argv[2]) - int (argv[3])
+   elif argv[1]=='mul':
+      print int (argv[2]) * int (argv[3])
+   elif argv[1]=='div':
+      print int (argv[2]) / int (argv[3])
+   
