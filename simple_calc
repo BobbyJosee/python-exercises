@@ -17,5 +17,5 @@ def simcalc(add,sub,mul,div):
 		print (div[0]/div[1])
 
 if __name__ == '__main__':
-    simcalc()
+    pass
    
