@@ -9,13 +9,7 @@ import click
 @click.command()
 @click.option('--nand', nargs=2, type=bool)
 @click.option('--nor', nargs=2, type=bool)
-def gates(nand, nor):
-    if nand and not nor:
-        na = NandGate(nand[0],nand[1]).logic()
-        print(na)
-    elif nor and not nand:
-        no = NorGate(nor).logic()
-        print(no)
+
 
 
 
@@ -80,6 +74,35 @@ class NorGate(AndGate,NotGate):
        Gate.__init__(self,self.temp)
        self.output = NotGate.logic(self)
        return self.output
+
+
+def gates(nand, nor):
+    if nand and not nor:
+        na = NandGate(nand[0],nand[1]).logic()
+        print(na)
+    elif nor and not nand:
+        no = NorGate(nor).logic()
+        print(no)
+
+
+if __name__ == '__main__':
+    gates()
+
+
+
+
+
+
+
+       		
+       
+
+	
+
+
+
+
+
 
 
 
