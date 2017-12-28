@@ -37,10 +37,6 @@ class Gate(object):
         """ the intelligence to be performed """
         raise NotImplementedError
 
-    def output(self):
-        """ the output of the gate """
-        self.logic()
-        return self.output
 
 
 class AndGate(Gate):
